@@ -22,8 +22,11 @@ class ComposerStaticInit157aa5f877e04a40f1a6aa3f07ee33b9
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
+        'a11c9c679106fb6eebafe1b18bae4f08' => __DIR__ . '/..' . '/recca0120/terminal/src/polyfill.php',
         'b6ec61354e97f32c0ae683041c78392a' => __DIR__ . '/..' . '/scrivo/highlight.php/HighlightUtilities/functions.php',
+        '19a7e2c3b1d506dcdc1b60aab8e102e4' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/shortcuts.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
+        '7becae842ee3fa18ac51ce7ea741b0c4' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/polyfill.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -38,6 +41,8 @@ class ComposerStaticInit157aa5f877e04a40f1a6aa3f07ee33b9
         'W' => 
         array (
             'Whoops\\' => 7,
+            'Webmozart\\PathUtil\\' => 19,
+            'Webmozart\\Glob\\' => 15,
             'Webmozart\\Assert\\' => 17,
         ),
         'T' => 
@@ -72,6 +77,8 @@ class ComposerStaticInit157aa5f877e04a40f1a6aa3f07ee33b9
         ),
         'R' => 
         array (
+            'Recca0120\\Terminal\\' => 19,
+            'Recca0120\\LaravelTracy\\' => 23,
             'Ramsey\\Uuid\\' => 12,
         ),
         'P' => 
@@ -157,6 +164,14 @@ class ComposerStaticInit157aa5f877e04a40f1a6aa3f07ee33b9
         'Whoops\\' => 
         array (
             0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
+        ),
+        'Webmozart\\PathUtil\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/webmozart/path-util/src',
+        ),
+        'Webmozart\\Glob\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/webmozart/glob/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -257,6 +272,14 @@ class ComposerStaticInit157aa5f877e04a40f1a6aa3f07ee33b9
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Recca0120\\Terminal\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/recca0120/terminal/src',
+        ),
+        'Recca0120\\LaravelTracy\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/recca0120/laravel-tracy/src',
         ),
         'Ramsey\\Uuid\\' => 
         array (
@@ -432,6 +455,7 @@ class ComposerStaticInit157aa5f877e04a40f1a6aa3f07ee33b9
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Task' => __DIR__ . '/../..' . '/app/Task.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonImmutable' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonImmutable.php',
@@ -3478,6 +3502,47 @@ class ComposerStaticInit157aa5f877e04a40f1a6aa3f07ee33b9
         'Ramsey\\Uuid\\UuidFactory' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidFactory.php',
         'Ramsey\\Uuid\\UuidFactoryInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidFactoryInterface.php',
         'Ramsey\\Uuid\\UuidInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidInterface.php',
+        'Recca0120\\LaravelTracy\\BarManager' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/BarManager.php',
+        'Recca0120\\LaravelTracy\\Contracts\\IAjaxPanel' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Contracts/IAjaxPanel.php',
+        'Recca0120\\LaravelTracy\\Contracts\\ILaravelPanel' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Contracts/ILaravelPanel.php',
+        'Recca0120\\LaravelTracy\\Contracts\\ISubscriablePanel' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Contracts/ISubscriablePanel.php',
+        'Recca0120\\LaravelTracy\\DebuggerManager' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/DebuggerManager.php',
+        'Recca0120\\LaravelTracy\\Events\\BeforeBarRender' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Events/BeforeBarRender.php',
+        'Recca0120\\LaravelTracy\\Exceptions\\Handler' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Exceptions/Handler.php',
+        'Recca0120\\LaravelTracy\\Http\\Controllers\\LaravelTracyController' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Http/Controllers/LaravelTracyController.php',
+        'Recca0120\\LaravelTracy\\LaravelTracyServiceProvider' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/LaravelTracyServiceProvider.php',
+        'Recca0120\\LaravelTracy\\Middleware\\RenderBar' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Middleware/RenderBar.php',
+        'Recca0120\\LaravelTracy\\Panels\\AbstractPanel' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Panels/AbstractPanel.php',
+        'Recca0120\\LaravelTracy\\Panels\\AbstractSubscriablePanel' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Panels/AbstractSubscriablePanel.php',
+        'Recca0120\\LaravelTracy\\Panels\\AuthPanel' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Panels/AuthPanel.php',
+        'Recca0120\\LaravelTracy\\Panels\\DatabasePanel' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Panels/DatabasePanel.php',
+        'Recca0120\\LaravelTracy\\Panels\\EventPanel' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Panels/EventPanel.php',
+        'Recca0120\\LaravelTracy\\Panels\\Helper' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Panels/Helper.php',
+        'Recca0120\\LaravelTracy\\Panels\\HtmlValidatorPanel' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Panels/HtmlValidatorPanel.php',
+        'Recca0120\\LaravelTracy\\Panels\\RequestPanel' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Panels/RequestPanel.php',
+        'Recca0120\\LaravelTracy\\Panels\\RoutingPanel' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Panels/RoutingPanel.php',
+        'Recca0120\\LaravelTracy\\Panels\\SessionPanel' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Panels/SessionPanel.php',
+        'Recca0120\\LaravelTracy\\Panels\\TerminalPanel' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Panels/TerminalPanel.php',
+        'Recca0120\\LaravelTracy\\Panels\\ViewPanel' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Panels/ViewPanel.php',
+        'Recca0120\\LaravelTracy\\Session' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Session.php',
+        'Recca0120\\LaravelTracy\\Template' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Template.php',
+        'Recca0120\\LaravelTracy\\Tracy' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/Tracy.php',
+        'Recca0120\\LaravelTracy\\XMLConstant' => __DIR__ . '/..' . '/recca0120/laravel-tracy/src/XMLConstant.php',
+        'Recca0120\\Terminal\\Application' => __DIR__ . '/..' . '/recca0120/terminal/src/Application.php',
+        'Recca0120\\Terminal\\Console\\Commands\\Artisan' => __DIR__ . '/..' . '/recca0120/terminal/src/Console/Commands/Artisan.php',
+        'Recca0120\\Terminal\\Console\\Commands\\ArtisanTinker' => __DIR__ . '/..' . '/recca0120/terminal/src/Console/Commands/ArtisanTinker.php',
+        'Recca0120\\Terminal\\Console\\Commands\\Cleanup' => __DIR__ . '/..' . '/recca0120/terminal/src/Console/Commands/Cleanup.php',
+        'Recca0120\\Terminal\\Console\\Commands\\Command' => __DIR__ . '/..' . '/recca0120/terminal/src/Console/Commands/Command.php',
+        'Recca0120\\Terminal\\Console\\Commands\\Composer' => __DIR__ . '/..' . '/recca0120/terminal/src/Console/Commands/Composer.php',
+        'Recca0120\\Terminal\\Console\\Commands\\Find' => __DIR__ . '/..' . '/recca0120/terminal/src/Console/Commands/Find.php',
+        'Recca0120\\Terminal\\Console\\Commands\\Mysql' => __DIR__ . '/..' . '/recca0120/terminal/src/Console/Commands/Mysql.php',
+        'Recca0120\\Terminal\\Console\\Commands\\Tail' => __DIR__ . '/..' . '/recca0120/terminal/src/Console/Commands/Tail.php',
+        'Recca0120\\Terminal\\Console\\Commands\\Vi' => __DIR__ . '/..' . '/recca0120/terminal/src/Console/Commands/Vi.php',
+        'Recca0120\\Terminal\\Contracts\\TerminalCommand' => __DIR__ . '/..' . '/recca0120/terminal/src/Contracts/TerminalCommand.php',
+        'Recca0120\\Terminal\\Http\\Controllers\\TerminalController' => __DIR__ . '/..' . '/recca0120/terminal/src/Http/Controllers/TerminalController.php',
+        'Recca0120\\Terminal\\Kernel' => __DIR__ . '/..' . '/recca0120/terminal/src/Kernel.php',
+        'Recca0120\\Terminal\\ProcessUtils' => __DIR__ . '/..' . '/recca0120/terminal/src/ProcessUtils.php',
+        'Recca0120\\Terminal\\TerminalServiceProvider' => __DIR__ . '/..' . '/recca0120/terminal/src/TerminalServiceProvider.php',
         'SebastianBergmann\\CodeCoverage\\CodeCoverage' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/CodeCoverage.php',
         'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
         'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Driver/Driver.php',
@@ -4331,7 +4396,32 @@ class ComposerStaticInit157aa5f877e04a40f1a6aa3f07ee33b9
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Property\\Property' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Property/Property.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
+        'Tracy\\Bar' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/Bar/Bar.php',
+        'Tracy\\BlueScreen' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/BlueScreen/BlueScreen.php',
+        'Tracy\\Bridges\\Nette\\Bridge' => __DIR__ . '/..' . '/tracy/tracy/src/Bridges/Nette/Bridge.php',
+        'Tracy\\Bridges\\Nette\\MailSender' => __DIR__ . '/..' . '/tracy/tracy/src/Bridges/Nette/MailSender.php',
+        'Tracy\\Bridges\\Nette\\TracyExtension' => __DIR__ . '/..' . '/tracy/tracy/src/Bridges/Nette/TracyExtension.php',
+        'Tracy\\Bridges\\Psr\\PsrToTracyLoggerAdapter' => __DIR__ . '/..' . '/tracy/tracy/src/Bridges/Psr/PsrToTracyLoggerAdapter.php',
+        'Tracy\\Bridges\\Psr\\TracyToPsrLoggerAdapter' => __DIR__ . '/..' . '/tracy/tracy/src/Bridges/Psr/TracyToPsrLoggerAdapter.php',
+        'Tracy\\Debugger' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/Debugger/Debugger.php',
+        'Tracy\\DefaultBarPanel' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/Bar/DefaultBarPanel.php',
+        'Tracy\\Dumper' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/Dumper/Dumper.php',
+        'Tracy\\FireLogger' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/Logger/FireLogger.php',
+        'Tracy\\Helpers' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/Helpers.php',
+        'Tracy\\IBarPanel' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/Bar/IBarPanel.php',
+        'Tracy\\ILogger' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/Logger/ILogger.php',
+        'Tracy\\Logger' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/Logger/Logger.php',
+        'Tracy\\OutputDebugger' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/OutputDebugger/OutputDebugger.php',
+        'UsersSeeder' => __DIR__ . '/../..' . '/database/seeds/UsersSeeder.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
+        'Webmozart\\Glob\\Glob' => __DIR__ . '/..' . '/webmozart/glob/src/Glob.php',
+        'Webmozart\\Glob\\Iterator\\GlobFilterIterator' => __DIR__ . '/..' . '/webmozart/glob/src/Iterator/GlobFilterIterator.php',
+        'Webmozart\\Glob\\Iterator\\GlobIterator' => __DIR__ . '/..' . '/webmozart/glob/src/Iterator/GlobIterator.php',
+        'Webmozart\\Glob\\Iterator\\RecursiveDirectoryIterator' => __DIR__ . '/..' . '/webmozart/glob/src/Iterator/RecursiveDirectoryIterator.php',
+        'Webmozart\\Glob\\Iterator\\RegexFilterIterator' => __DIR__ . '/..' . '/webmozart/glob/src/Iterator/RegexFilterIterator.php',
+        'Webmozart\\Glob\\Test\\TestUtil' => __DIR__ . '/..' . '/webmozart/glob/src/Test/TestUtil.php',
+        'Webmozart\\PathUtil\\Path' => __DIR__ . '/..' . '/webmozart/path-util/src/Path.php',
+        'Webmozart\\PathUtil\\Url' => __DIR__ . '/..' . '/webmozart/path-util/src/Url.php',
         'Whoops\\Exception\\ErrorException' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
         'Whoops\\Exception\\Formatter' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/Formatter.php',
         'Whoops\\Exception\\Frame' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/Frame.php',
