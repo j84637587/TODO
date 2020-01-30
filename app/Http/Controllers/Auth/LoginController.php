@@ -22,14 +22,14 @@ class LoginController extends Controller
     use AuthenticatesUsers;
 
     /**
-     * Where to redirect users after login.
+     * 登入後重新導向的頁面.
      *
      * @var string
      */
     protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
-     * Create a new controller instance.
+     * 建構子, 建立新的控制物件.
      *
      * @return void
      */

@@ -8,15 +8,16 @@ use Illuminate\Notifications\Notifiable;
 
 class Task extends Authenticatable
 {
-    use Notifiable;
+    /**
+     * Table name
+     */
     protected $table = 'tasks';
-
     /**
      * The attributes that are mass assignable.
-     *
-     * @var array
      */
     protected $fillable = [
-        'name', 'completed', 'created_at','updated_at',
+        'user_id',
+        'name',
+        'completed',
     ];
 }

@@ -25,14 +25,14 @@ class RegisterController extends Controller
     use RegistersUsers;
 
     /**
-     * Where to redirect users after registration.
+     * 註冊完畢後重新導向的頁面.
      *
      * @var string
      */
     protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
-     * Create a new controller instance.
+     * 建構子, 建立新的控制物件.
      *
      * @return void
      */
@@ -57,7 +57,7 @@ class RegisterController extends Controller
     }
 
     /**
-     * Create a new user instance after a valid registration.
+     * 成功註冊後創建新的用戶物件.
      *
      * @param  array  $data
      * @return \App\User

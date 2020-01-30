@@ -2980,12 +2980,14 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #38c172;
   border-color: #38c172;
+    margin-right: 6px;
 }
 
 .btn-success:hover {
   color: #fff;
   background-color: #2fa360;
   border-color: #2d995b;
+    margin-right: 6px;
 }
 
 .btn-success:focus,

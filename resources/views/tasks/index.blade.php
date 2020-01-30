@@ -1,12 +1,3 @@
-<?php
-//session_start();
-/*是否有session*/
-if(empty($_SESSION['users']['account']) || empty($_SESSION['users']['password'])){
-    echo "<script>	setTimeout(function(){window.location.href='login.php';},500);	</script>";
-    exit();
-}
-?>
-
 @extends('layouts.master')
 @section('title', '代辦清單')
 @section('head_title', '待辦事項清單')

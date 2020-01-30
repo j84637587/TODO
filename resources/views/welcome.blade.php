@@ -82,13 +82,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    主頁
+                    主頁 - 待辦清單
                 </div>
 
                 <div class="links">
                     @auth
-                        <a href="{{ url('/home') }}">主頁</a>
-                        <a href="{{ url('/home') }}">待辦清單</a>
+                        <a href="{{ route('tasks') }}">待辦清單</a>
                     @else
                         <a href="{{ route('login') }}">登入</a>
 
