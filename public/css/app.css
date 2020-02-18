@@ -11358,3 +11358,16 @@ a.text-dark:focus {
   }
 }
 
+/* 圓邊 */
+.angle_rounded {
+    border-radius: 50px;	/* 高度 / 2 */
+}
+
+/* 完整的圓形 */
+.circle {
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+    border: 1px dashed red;
+    border-radius: 300px;	/* 高度 */
+}
