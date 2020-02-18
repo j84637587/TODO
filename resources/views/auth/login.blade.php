@@ -53,7 +53,8 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary angle_rounded "> <!-- btn-primary -->
+                                <button type="submit" class="btn btn-primary angle_rounded">
+                                    <img src="/icon/sign-in-alt.svg" alt="alt text" height="20px" width="20px" /> <!-- Cause the main Dir is /public. So better use Dirs under /public -->
                                     {{ __('登入') }}
                                 </button>
                                 <!--
